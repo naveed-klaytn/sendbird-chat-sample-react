@@ -269,8 +269,8 @@ const BasicGroupChannelSample = (props) => {
         const sendbirdChat = await SendbirdChat.init({
             appId: SENDBIRD_INFO.appId,
             localCacheEnabled: true,
-            // customApiHost: SENDBIRD_INFO.customApiHost,
-            // customWebSocketHost: SENDBIRD_INFO.customWebSocketHost,
+            customApiHost: SENDBIRD_INFO.customApiHost,
+            customWebSocketHost: SENDBIRD_INFO.customWebSocketHost,
             modules: [new GroupChannelModule()]
         });
 

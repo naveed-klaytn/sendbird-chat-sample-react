@@ -231,6 +231,8 @@ const OpenChannelSendAnAdminMessage = (props) => {
         const sendbirdChat = await SendbirdChat.init({
             appId: SENDBIRD_INFO.appId,
             localCacheEnabled: true,
+            ustomApiHost: SENDBIRD_INFO.customApiHost,
+            customWebSocketHost: SENDBIRD_INFO.customWebSocketHost,
             modules: [new OpenChannelModule()]
         });
 
